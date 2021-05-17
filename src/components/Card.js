@@ -1,7 +1,6 @@
 import React from "react";
 
 function Card({ data }) {
-  console.log(data);
   return (
     <div className="row shadow m-3">
       <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
@@ -33,12 +32,12 @@ function Card({ data }) {
         <span className="badge text-secondary m-2 p-2 bg-light">
           {data.level}
         </span>
-        {data.tools.map((item, index) => (
+        {data.languages.map((item, index) => (
           <span className="badge text-secondary m-2  p-2 bg-light" key={index}>
             {item}
           </span>
         ))}
-        {data.languages.map((item, index) => (
+        {data.tools.map((item, index) => (
           <span className="badge text-secondary m-2  p-2 bg-light" key={index}>
             {item}
           </span>
